@@ -57,7 +57,7 @@ Log in to the desktop as root.
 
 5. Confirm the RHEL 9 STIG opens
     - Return to the home screen
-    - The RHEL 9 STIG should be listed under the STIG Viewer row
+    - The RHEL 9 STIG should be listed in the STIG Viewer row
 
 ## End State
 
