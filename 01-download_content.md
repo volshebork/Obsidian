@@ -20,7 +20,6 @@ Download the following content to a hard drive or burn to a DVD.
     - The full DISA checklist can be found at [Red Hat Enterprise Linux 9 Ver 2, Rel 9 Checklist](https://ncp.nist.gov/checklist/1072), but you do not need it for this guide
     - Newer versions of the Ansible collections may not work with the RHEL 9 STIG for Ansible role
 
-
 ## Files From This Repo
 
 If you are unable to download this repo from github, you can skp this step. You will need to manually recreate the directories and files on the server.
