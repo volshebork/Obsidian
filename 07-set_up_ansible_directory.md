@@ -12,11 +12,44 @@ Log in to the desktop as root.
     cp -r /opt/stig_server/ansible /root/ansible
     ```
 
+2. Install tree if needed
+
+    ```bash
+    dnf install -y tree
+    ```
+
+3. Confirm the directory was copied
+
+    ```bash
+    tree /root/ansible
+    ```
+
+    The output should look like this
+
+    ```txt
+    /root/ansible
+    ├── ansible.cfg
+    ├── inventory
+    │   └── inventory.ini
+    ├── playbooks
+    │   ├── apply_stig.yml
+    │   ├── repo_clients.yml
+    │   └── vars.yml
+    └── roles
+        └── repo_clients
+            ├── files
+            │   └── local.repo
+            └── tasks
+                └── main.yml
+
+    6 directories, 7 files
+    ```
+
 ## Add the RHEL 9 STIG Role
 
 Log in to the desktop as root.
 
-1. Install unzip
+1. Install unzip if needed
 
     ```bash
     dnf install -y unzip
