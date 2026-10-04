@@ -1,0 +1,9 @@
+---
+- name: Apply RHEL 9 STIG
+  hosts: all
+  gather_facts: no
+  become: yes
+  vars_files:
+    - vars.yml
+  roles:
+    - rhel9STIG

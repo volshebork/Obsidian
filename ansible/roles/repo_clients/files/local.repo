@@ -1,0 +1,13 @@
+[local-baseos]
+name=Local BaseOS
+baseurl=http://<repo-server-ip>/repos/BaseOS
+enabled=1
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+
+[local-appstream]
+name=Local AppStream
+baseurl=http://<repo-server-ip>/repos/AppStream
+enabled=1
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release

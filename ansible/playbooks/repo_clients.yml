@@ -1,0 +1,6 @@
+---
+- name: Point clients at the repo server
+  hosts: clients
+  become: yes
+  roles:
+    - repo_clients

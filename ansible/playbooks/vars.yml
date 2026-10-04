@@ -1,0 +1,7 @@
+# Rules skipped by the RHEL 9 STIG role
+# Format:
+#   # V-<rule number>: <why the rule is skipped>
+#   rhel9STIG_stigrule_<rule number>_Manage: False
+
+# V-258090: do not enable or start fapolicyd, which blocks STIG Viewer from launching
+rhel9STIG_stigrule_258090_Manage: False

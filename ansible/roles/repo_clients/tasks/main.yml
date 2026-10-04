@@ -1,0 +1,9 @@
+---
+# Copy the repo file so clients install packages from the repo server
+- name: Deploy the repo file
+  ansible.builtin.copy:
+    src: local.repo
+    dest: /etc/yum.repos.d/local.repo
+    owner: root
+    group: root
+    mode: "0644"
