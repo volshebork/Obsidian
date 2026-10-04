@@ -1,7 +1,0 @@
-Creating a local repo
-Installing ansbile
-Installing SCC
-Installing STIG Viewer
-Scanning with SCC
-Viewing results with STIG Viewer
-Running the ansbile playbook
