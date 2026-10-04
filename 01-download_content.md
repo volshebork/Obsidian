@@ -73,4 +73,4 @@ At this point, your storage device
 
 - Has the files needed for the server
 
-Next: `02-install_rhel_server.md` to build the server.
+Next: [02-install_rhel_server.md](02-install_rhel_server.md) to build the server.
