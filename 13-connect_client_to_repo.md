@@ -51,4 +51,4 @@ At this point, the client
 
 - Installs packages from the server's repos
 
-Next: [14-baseline_scan.md](14-baseline_scan.md) to scan the server and clients before the STIG is applied.
+Next: [14-scan_server.md](14-scan_server.md) to scan the server and clients before the STIG is applied.
