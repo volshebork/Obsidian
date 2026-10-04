@@ -148,15 +148,7 @@ Log in to the desktop as root.
 
 Log in to the desktop as root.
 
-1. Confirm the repo client role has the server's IP address
-
-    ```bash
-    grep baseurl /root/ansible/roles/repo_clients/files/local.repo
-    ```
-
-    - Both lines should show the server's IP address
-
-2. Confirm Ansible can reach the server
+1. Confirm Ansible can reach the server
 
     ```bash
     cd /root/ansible
@@ -166,7 +158,7 @@ Log in to the desktop as root.
     - The output should return `"ping": "pong"`
     - Warnings that `community.general` and `ansible.posix` do not support Ansible version 2.14.18 are expected and can be ignored
 
-3. Confirm both playbooks are valid
+2. Confirm both playbooks are valid
 
     ```bash
     cd /root/ansible
