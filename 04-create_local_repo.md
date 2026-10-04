@@ -10,43 +10,43 @@ Log in to the desktop as root.
 
 2. Mount the DVD
 
-    ```bash
+```bash
     mount /dev/sr0 /mnt
-    ```
+```
 
     - A `mounted read-only` warning is expected
 
 3. Create the repo directory
 
-    ```bash
+```bash
     mkdir -p /var/www/html/repos
-    ```
+```
 
 4. Copy the BaseOS repo
 
-    ```bash
+```bash
     cp -r /mnt/BaseOS /var/www/html/repos/
-    ```
+```
 
 5. Copy the AppStream repo
 
-    ```bash
+```bash
     cp -r /mnt/AppStream /var/www/html/repos/
-    ```
+```
 
     - The copies take several minutes
 
 6. Set the SELinux labels so Apache can read the repos
 
-    ```bash
+```bash
     restorecon -R /var/www/html/repos
-    ```
+```
 
 7. Unmount the DVD
 
-    ```bash
+```bash
     umount /mnt
-    ```
+```
 
 8. Remove the DVD
 
@@ -56,11 +56,12 @@ Log in to the desktop as root.
 
 1. Copy the repo file
 
-    ```bash
+```bash
     cp /opt/stig_server/downloads/local.repo /etc/yum.repos.d/local.repo
-    ```
+```
 
-    - The server reads its repo straight from disk, so it keeps working even if Apache is stopped
+    - The server reads the repos directly from `/var/www/html/repos`, not through Apache
+    - The server can still install packages from its local repo if Apache ever fails
 
 ## Verify the Local Repo
 
@@ -68,19 +69,19 @@ Log in to the desktop as root.
 
 1. Confirm both repos are listed
 
-    ```bash
+```bash
     dnf clean all
     dnf repolist
-    ```
+```
 
     - `local-baseos` and `local-appstream` should be listed
     - A `This system is not registered` message is expected and can be ignored
 
 2. Confirm the SELinux labels
 
-    ```bash
+```bash
     ls -Zd /var/www/html/repos/BaseOS /var/www/html/repos/AppStream
-    ```
+```
 
     - Both should show `httpd_sys_content_t`
 
@@ -89,6 +90,6 @@ Log in to the desktop as root.
 At this point, the server
 
 - Has the BaseOS and AppStream repos in `/var/www/html/repos`
-- Installs packages from its own local repo
+- Installs packages from its local repo, without the DVD
 
 Next: [05-publish_repo.md](05-publish_repo.md) to host the repos over HTTP for clients.
