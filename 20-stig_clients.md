@@ -16,7 +16,13 @@ Log in to the server's desktop as root.
     ansible-playbook playbooks/apply_stig.yml --limit <client-name> --check -K
     ```
 
-    - Replace `<client-name>` with the client's name from the inventory, or use `clients` to preview every client
+    - Replace `<client-name>` with the client's name from the inventory
+    - To preview every client in the inventory at once, use `clients` instead
+
+    ```bash
+        ansible-playbook playbooks/apply_stig.yml --limit clients --check -K
+    ```
+
     - At the `BECOME password` prompt, enter the clients' `ansible` password
     - `--check` shows what the playbook would change, without changing anything
     - Some tasks may report errors in check mode, since they depend on changes earlier tasks would have made
@@ -42,7 +48,13 @@ Log in to the server's desktop as root.
     ansible-playbook playbooks/apply_stig.yml --limit <client-name> -K
     ```
 
-    - Replace `<client-name>` with the client's name from the inventory, or use `clients` to STIG every client
+    - Replace `<client-name>` with the client's name from the inventory
+    - To STIG every client in the inventory at once, use `clients` instead
+
+    ```bash
+        ansible-playbook playbooks/apply_stig.yml --limit clients -K
+    ```
+
     - At the `BECOME password` prompt, enter the clients' `ansible` password
     - This will reboot the client at the end of the run
     - Ansible waits for the client to come back up before finishing
