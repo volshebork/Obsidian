@@ -4,14 +4,14 @@ This repo was written for RHEL 9.6.
 
 These documents are meant to be read and followed from this repo. Downloading these files may change the behavior of relative links.
 
-> [!Important]
-> The configurations required for the clients have not been tested against any of the configurations required by anything you are running on your clients. This repo may contradict a configuration required by your organization.
+> [!IMPORTANT]
+> The STIG settings and configurations in this repo have not been tested against the software running on your clients, and may conflict with configurations required by your organization.
 
 The repo walks you through building a server that will allow clients to install packages and have STIGs applied. You will also be able to run Ansible playbooks from this server to any clients. You will no longer need to move files to each workstation you build as long as this server is maintained.
 
 In the end you will have one server acting as:
 
-- The Repo server
+- The repo server
 - An Ansible server
 - An SCC server to scan clients
 - A STIG Viewer server to view the scans of clients
