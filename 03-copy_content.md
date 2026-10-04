@@ -15,8 +15,8 @@ Log in to the desktop as root.
     ```
 
     - `/dev/sr0` is the DVD drive
-    - For a USB drive, run `lsblk` to find its device name, then mount that instead, (e.g. `/dev/sdb1`)
-    - A "mounted read-only" warning is expected for a DVD
+    - For a USB drive, run `lsblk` to find its device name, then mount that instead, (e.g. `mount /dev/sdb1 /mnt`)
+    - A `mounted read-only` warning is expected for a DVD
 
 3. Create the content directory
 
@@ -30,7 +30,7 @@ Log in to the desktop as root.
     cp /mnt/* /opt/stig_server/downloads/
     ```
 
-    - An `omitting directory 'ansible'` message is expected, since the next step copies it
+    - An `omitting directory 'ansible'` message is expected, the next step copies it
 
 5. Copy the ansible directory
 
