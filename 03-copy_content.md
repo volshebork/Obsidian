@@ -15,7 +15,7 @@ Log in to the desktop as root.
     ```
 
     - `/dev/sr0` is the DVD drive
-    - For a USB drive, run `lsblk` to find its device name, then mount that instead, (e.g. `mount /dev/sdb1 /mnt`)
+    - For a USB drive, run `lsblk` to find its device name, then mount that instead (e.g. `mount /dev/sdb1 /mnt`)
     - A `mounted read-only` warning is expected for a DVD
 
 3. Create the content directory
@@ -53,7 +53,7 @@ Log in to the desktop as root.
 1. Confirm the downloaded files
 
     ```bash
-    ls -1 /opt/stig-server/downloads/
+    ls -1 /opt/stig_server/downloads/
     ```
 
     - The output should show
