@@ -31,6 +31,7 @@ Log in to the server's desktop as root.
 3. In the Content pane, confirm RHEL_9_STIG is the only content checked
 
 4. Click Start Scan
+    - Click Continue on the Unanswered Manual Questions Found warning, which marks manual checks as Not Reviewed
     - The scan takes several minutes
 
 5. Confirm the scan completed
