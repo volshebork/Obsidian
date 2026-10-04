@@ -123,7 +123,8 @@ Log in to the desktop as root.
     sed -i 's/<repo-server-ip>/<server-ip>/' /root/ansible/roles/repo_clients/files/local.repo
     ```
 
-    - Replace `<server-ip>` with the server's IP address, leaving `<repo-server-ip>` as is
+    - Leave `<repo-server-ip>` exactly as shown, it is the placeholder text being replaced
+    - Replace `<server-ip>` with the server's IP address
 
 ## Verify the Ansible Directory
 
