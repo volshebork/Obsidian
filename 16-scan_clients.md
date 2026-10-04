@@ -30,4 +30,4 @@ At this point
 
 - Every client has been scanned with SCC before the STIG is applied
 
-Next: [17-save_baseline_checklists.md](17-save_baseline_checklists.md) to save and review the baseline checklists.
+Next: [17-view_scan_results.md](17-view_scan_results.md) to save and review the baseline checklists.
