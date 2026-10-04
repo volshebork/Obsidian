@@ -12,7 +12,7 @@ Install RHEL 9.6 from the installation DVD using these settings.
 6. Leave Lock root account unchecked
 7. Create an admin user and check Make this user administrator
 8. Begin the installation and reboot when it finishes
-9. Keep the RHEL 9.6 DVD on hand, since `04-create_local_repo.md` copies the repos from it
+9. Keep the RHEL 9.6 DVD on hand, since [04-create_local_repo.md](04-create_local_repo.md) copies the repos from it
 
 ## Verify the Install
 
@@ -38,4 +38,4 @@ At this point, the server
 - Allows root to log in to the desktop
 - Has an admin account in `wheel`
 
-Next: `03-copy_content.md` to copy the downloaded content to the server.
+Next: [03-copy_content.md](03-copy_content.md) to copy the downloaded content to the server.

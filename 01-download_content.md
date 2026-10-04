@@ -30,7 +30,7 @@ If you are unable to download this repo from GitHub, you can skip downloading fi
 
 2. Extract the zip
 3. Copy the entire `ansible` directory to your storage device
-4. Copy the `local.repo` file located in `Obsidian-main\local.repo` to your storage device
+4. Copy the [local.repo](local.repo) file located in `Obsidian-main\local.repo` to your storage device.
 
 ## Verify Files
 
