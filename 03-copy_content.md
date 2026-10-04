@@ -30,12 +30,12 @@ Log in to the desktop as root.
     cp /mnt/* /opt/stig_server/downloads/
     ```
 
-    - An "omitting directory 'ansible'" message is expected, since the next step copies it
+    - An `omitting directory 'ansible'` message is expected, since the next step copies it
 
 5. Copy the ansible directory
 
     ```bash
-    cp -r /mnt/ansible /opt/stig-server/ansible
+    cp -r /mnt/ansible /opt/stig_server/ansible
     ```
 
 6. Unmount the storage device
