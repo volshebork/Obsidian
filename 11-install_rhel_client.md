@@ -9,6 +9,26 @@ Install RHEL 9.6 on the client however its purpose requires, with the settings b
 3. Use the same `ansible` password on every client
 4. Begin the installation and reboot when it finishes
 
+## Create the ansible Account on an Existing Client
+
+Skip this section if the `ansible` account was created during the install.
+
+Log in to the client's desktop as root.
+
+1. Create the account and add it to `wheel`
+
+    ```bash
+    useradd -G wheel ansible
+    ```
+
+2. Set the password
+
+    ```bash
+    passwd ansible
+    ```
+
+    - Use the same `ansible` password on every client
+
 ## Verify the Client
 
 Log in to the client's desktop as root.
