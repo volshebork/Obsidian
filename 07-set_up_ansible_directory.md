@@ -125,6 +125,24 @@ Log in to the desktop as root.
 
     - Leave `<repo-server-ip>` exactly as shown, it is the placeholder text being replaced
     - Replace `<server-ip>` with the server's IP address
+    - For example, with a server at `192.168.56.10`
+
+        ```bash
+        sed -i 's/<repo-server-ip>/192.168.56.10/' /root/ansible/roles/repo_clients/files/local.repo
+        ```
+
+2. Verify the file (using 192.168.56.10 as an example)
+
+    ```bash
+    grep baseurl /root/ansible/roles/repo_clients/files/local.repo
+    ```
+
+    The baseurl lines should look like this
+
+    ```txt
+    baseurl=http://192.168.56.10/repos/BaseOS
+    baseurl=http://192.168.56.10/repos/AppStream
+    ```
 
 ## Verify the Ansible Directory
 
