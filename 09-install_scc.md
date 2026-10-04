@@ -33,7 +33,6 @@ Log in to the desktop as root.
 5. Confirm the RHEL 9 STIG content is installed
     - In the Content pane, expand Linux
     - RHEL_9_STIG should be listed with version 002.009.013
-    - SCC 5.15 includes this content, so no separate install is needed
 
 ## Install the UNIX Remote Scanning Plugin
 
