@@ -22,7 +22,7 @@ Download the following content to a storage device.
 
 ## Files From This Repo
 
-If you are unable to download this repo from GitHub, you can skip downloading files from this repo. You will need to manually recreate the [ansible directory](https://github.com/volshebork/Obsidian/tree/main/ansible) and [local.repo file](https://raw.githubusercontent.com/volshebork/Obsidian/refs/heads/main/local.repo) on the server.
+If you are unable to download this repo from GitHub, you can skip downloading files from this repo. You will need to manually recreate the [ansible directory](ansible) and [local.repo](local.repo) on the server.
 
 1. Download this repo as a zip
     - Go to [Obsidian](https://github.com/volshebork/Obsidian)
