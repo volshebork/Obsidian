@@ -167,6 +167,7 @@ Log in to the desktop as root.
     ```
 
     - Each check should print the playbook name with no errors
+    - Warnings that `community.general` and `ansible.posix` do not support Ansible version 2.14.18 are expected for `apply_stig.yml` and can be ignored
 
 ## End State
 
