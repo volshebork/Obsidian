@@ -75,6 +75,44 @@ Log in to the desktop as root.
 
     - `U_RHEL_9_V2R9_STIG_Ansible_Documentation.pdf` in `/opt/stig_server/disa_ansible` explains the role's variables
 
+5. Confirm the role was copied
+
+    ```bash
+    tree /root/ansible
+    ```
+
+    - The output should look like this
+
+    ```txt
+    /root/ansible
+    ├── ansible.cfg
+    ├── inventory
+    │   └── inventory.ini
+    ├── playbooks
+    │   ├── apply_stig.yml
+    │   ├── repo_clients.yml
+    │   └── vars.yml
+    └── roles
+        ├── repo_clients
+        │   ├── files
+        │   │   └── local.repo
+        │   └── tasks
+        │       └── main.yml
+        └── rhel9STIG
+            ├── callback_plugins
+            │   └── stig_xml.py
+            ├── defaults
+            │   └── main.yml
+            ├── files
+            │   └── U_RHEL_9_STIG_V2R9_Manual-xccdf.xml
+            ├── handlers
+            │   └── main.yml
+            └── tasks
+                └── main.yml
+
+    12 directories, 12 files
+    ```
+
 ## Point the Repo Client Role at the Server
 
 Log in to the desktop as root.
