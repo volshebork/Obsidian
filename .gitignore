@@ -1,0 +1,5 @@
+# Ansible run log, written by log_path in ansible.cfg
+ansible/ansible.log
+
+# DISA's STIG role, which comes from the DISA zip and is copied in on the server
+ansible/roles/rhel9STIG/
