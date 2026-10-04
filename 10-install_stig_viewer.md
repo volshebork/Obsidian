@@ -25,6 +25,7 @@ Log in to the desktop as root.
     ```
 
     - `--no-sandbox` is required to run STIG Viewer as root
+    - Type `/opt/stig_server/stig_viewer_3-linux-x64/S` and press `Tab` to complete the rest of the path
 
 4. Launch STIG Viewer
 
