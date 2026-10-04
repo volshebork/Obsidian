@@ -62,25 +62,12 @@ Log in to the desktop as root.
 
 ## Verify From a Client
 
-Log in to any client's desktop as root.
-
-1. Confirm the client can reach the repo
-
-    ```bash
-    curl -s http://<repo-server-ip>/repos/BaseOS/repodata/repomd.xml | head -n 5
-    ```
-
-    - Replace `<repo-server-ip>` with the server's IP address
-    - The output should be the start of an XML file, the same as on the server
-    - Clients are pointed at the repo in a later step
+Client access to the repos is verified in [13-connect_client_to_repo.md](13-connect_client_to_repo.md), once a client is built.
 
 ## End State
 
 At this point, the server
 
 - Hosts the BaseOS and AppStream repos over HTTP
-- Is reachable by clients on the network
-
-Clients cannot install packages from the server yet, since their repo file is set up by Ansible.
 
 Next: [06-install_ansible.md](06-install_ansible.md) to install Ansible and the collections.
