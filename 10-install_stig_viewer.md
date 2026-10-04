@@ -2,7 +2,7 @@
 
 Install STIG Viewer and open the RHEL 9 STIG, so scan results can be reviewed.
 
-## Install STIG Viewer on the Server
+## Install STIG Viewer on Server
 
 Log in to the desktop as root.
 
@@ -18,11 +18,13 @@ Log in to the desktop as root.
     unzip /opt/stig_server/downloads/U_STIGViewer-linux-x64-3-8-1.zip -d /opt/stig_server
     ```
 
-3. Rename the STIG Viewer directory
+3. Launch STIG Viewer
 
     ```bash
-    mv /opt/stig_server/stig_viewer_3-linux-x64 /opt/stig_server/stigviewer
+    /opt/stig_server/stig_viewer_3-linux-x64/STIG\ Viewer\ 3 --no-sandbox
     ```
+
+    - `--no-sandbox` is required to run STIG Viewer as root
 
 4. Launch STIG Viewer
 
@@ -45,7 +47,7 @@ Log in to the desktop as root.
 2. Launch STIG Viewer if it is not already open
 
     ```bash
-    /opt/stig_server/stigviewer/STIG\ Viewer\ 3 --no-sandbox
+    /opt/stig_server/stig_viewer_3-linux-x64/STIG\ Viewer\ 3 --no-sandbox
     ```
 
 3. In the STIG Viewer row, click Open
