@@ -81,7 +81,7 @@ Log in to the desktop as root.
     tree /root/ansible
     ```
 
-    - The output should look like this
+    The output should look like this
 
     ```txt
     /root/ansible
