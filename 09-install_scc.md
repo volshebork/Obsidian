@@ -2,7 +2,7 @@
 
 Install SCC and the UNIX Remote Scanning Plugin, which lets SCC scan clients over SSH.
 
-## Install SCC
+## Install SCC on Server
 
 Log in to the desktop as root.
 
