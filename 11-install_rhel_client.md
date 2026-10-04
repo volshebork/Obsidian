@@ -2,7 +2,7 @@
 
 Install RHEL 9.6 on the client however its purpose requires, with the settings below. These are the only settings the STIG process depends on.
 
-## Install RHEL
+## Create the ansible Accont on Installation
 
 1. Set a static IP address on the same network as the server
 2. Create a user named `ansible` and check Make this user administrator
