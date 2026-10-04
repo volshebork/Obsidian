@@ -1,6 +1,6 @@
 # Download Content
 
-Download the following content to a hard drive or burn to a DVD.
+Download the following content to a storage device.
 
 ## STIG Files From the Internet
 
@@ -22,19 +22,38 @@ Download the following content to a hard drive or burn to a DVD.
 
 ## Files From This Repo
 
-If you are unable to download this repo from github, you can skp this step. You will need to manually recreate the directories and files on the server.
+If you are unable to download this repo from GitHub, you can skip downloading files from this repo. You will need to manually recreate the [ansible directory](https://github.com/volshebork/Obsidian/tree/main/ansible) and [local.repo file](https://raw.githubusercontent.com/volshebork/Obsidian/refs/heads/main/local.repo) on the server.
 
 1. Download this repo as a zip
     - Go to [Obsidian](https://github.com/volshebork/Obsidian)
     - Click Code, then Download ZIP
 
 2. Extract the zip
-3. Copy the `ansible` directory to your DVD/storage device
-4. Copy the local.repo file to your DVD/storage device
+3. Copy the entire `ansible` directory to your storage device
+4. Copy the local.repo file located in `Obsidian-main\local.repo` to your storage device
 
 ## Verify Files
 
-You should have the following files downloaded:
+You should have the following directory downloaded to your storage device:
+
+```txt
+ansible/
+├── ansible.cfg
+├── inventory/
+│   └── inventory.ini
+├── playbooks/
+│   ├── apply_stig.yml
+│   ├── repo_clients.yml
+│   └── vars.yml
+└── roles/
+    └── repo_clients/
+        ├── files/
+        │   └── local.repo
+        └── tasks/
+            └── main.yml
+```
+
+You should have the following files downloaded to your storage device:
 
 ```txt
 ansible-posix-2.1.0.tar.gz
@@ -48,28 +67,9 @@ U_RHEL_9_V2R9_STIG.zip
 U_STIGViewer-linux-x64-3-8-1.zip
 ```
 
-You should have the following directory downloaded:
-
-```txt
-ansible/
-├── ansible.cfg
-├── inventory/
-│   └── inventory.ini
-├── playbooks/
-│   ├── apply-stig.yml
-│   ├── repo-clients.yml
-│   └── vars.yml
-└── roles/
-    └── repo_clients/
-        ├── files/
-        │   └── local.repo
-        └── tasks/
-            └── main.yml
-```
-
 ## End State
 
-At this point, your DVD or hard drive...
+At this point, your storage device
 
 - Has the files needed for the server
 
