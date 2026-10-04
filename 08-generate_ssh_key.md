@@ -2,7 +2,7 @@
 
 Generate the server's SSH key, which Ansible uses to log in to clients.
 
-## Generate the SSH Key
+## Generate the Server's SSH Key
 
 Log in to the desktop as root.
 
